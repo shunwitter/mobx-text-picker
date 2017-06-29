@@ -4,6 +4,12 @@
 
 # Usage
 
+
+### Define your store
+
+1. Define your store class by extending `MobxTextPickerStoreBase`.
+2. Define your options in observable `store` object.
+
 ```js:ObservableSearchStore.js
 // @flow
 
@@ -34,10 +40,29 @@ export default ObservableSearchStore;
 
 
 
+### Options
+
+|----|-----|-----|
+| key | - | This is fieldName for the TextInput. e.g. `area` |
+| multiple | boolean | If true, multiple selection is enabled |
+| options | object | Array of selectable item. If no label specified value will be its label. |
+
+
+
+### Mobx
+
+`@computed ${fieldName}Selected`
+
+TODO: Add others
+
+
+
+### In Your Component
+
 ```js:JobSearch.js
 // @flow
 
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { View } from 'react-native';
 import { inject, observer } from 'mobx-react/native';
 import MobxTextPicker from 'mobx-text-picker';
 import React, { Component } from 'react';
