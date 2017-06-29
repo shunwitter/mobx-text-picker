@@ -1,6 +1,6 @@
 {
   "name": "mobx-text-picker",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ReactNative TextInput as Picker",
   "main": "index.js",
   "scripts": {
