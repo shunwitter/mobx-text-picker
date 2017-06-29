@@ -42,10 +42,11 @@ export default ObservableSearchStore;
 
 ### Options
 
-|----|-----|-----|
-| key | - | This is fieldName for the TextInput. e.g. `area` |
-| multiple | boolean | If true, multiple selection is enabled |
-| options | object | Array of selectable item. If no label specified value will be its label. |
+| Field | Option Name | Type | |
+|----|----|----|----|
+| key | - | - | This is fieldName for the TextInput. e.g. `area` |  |
+| | multiple | boolean | If true, multiple selection is enabled |
+| | options | object | Array of selectable item. If no label specified value will be its label. |
 
 
 
